@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 web приложение с фильтрами как в Instagram</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <header class="page-header">
+        HTML5 web приложение с фильтрами как в Instagram
+    </header>
+
+    <div id="photo-box" class="photo-box">
+        <div class="label">
+            <img src="https://ucarecdn.com/c7aeb97e-a73f-40bb-8966-45d692d6dde1/upload.png" alt="Upload icon" width="100" height="100"/>
+            <div>Нажмите или перетащите сюда изображение...</div>
+        </div>
+
+        <div id="loader" class="loader"></div>
+    </div>
+
+    <div class="download">
+        <a href="#" id="download-link" class="download-link">
+            Скачать изображение
+        </a>
+    </div>
+
+    <input type="file" id="file-picker" class="file-picker"/>
+
+    <div id="filters" class="filters">
+        <div class="preset preset_original" data-preset="original">
+            <span class="preset-name">Original</span>
+        </div>
+        <div class="preset preset_vintage" data-preset="vintage">
+            <span class="preset-name">Vintage</span>
+        </div>
+        <div class="preset preset_lomo" data-preset="lomo" class="">
+            <span class="preset-name">Lomo</span>
+        </div>
+        <div class="preset preset_clarity" data-preset="clarity" class="">
+            <span class="preset-name">Clarity</span>
+        </div>
+        <div class="preset preset_sinCity" data-preset="sinCity">
+            <span class="preset-name">Sin City</span>
+        </div>
+        <div class="preset preset_sunrise" data-preset="sunrise">
+            <span class="preset-name">Sunrise</span>
+        </div>
+        <div class="preset preset_crossProcess" data-preset="crossProcess">
+            <span class="preset-name">Cross Process</span>
+        </div>
+        <div class="preset preset_orangePeel" data-preset="orangePeel">
+            <span class="preset-name">Orange Peel</span>
+        </div>
+        <div class="preset preset_love" data-preset="love" class="Active">
+            <span class="preset-name">Love</span>
+        </div>
+        <div class="preset preset_grungy" data-preset="grungy">
+            <span class="preset-name">Grungy</span>
+        </div>
+        <div class="preset preset_jarques" data-preset="jarques">
+            <span class="preset-name">Jarques</span>
+        </div>
+        <div class="preset preset_pinhole" data-preset="pinhole">
+            <span class="preset-name">Pinhole</span>
+        </div>
+        <div class="preset preset_oldBoot" data-preset="oldBoot">
+            <span class="preset-name">Old Boot</span>
+        </div>
+        <div class="preset preset_glowingSun" data-preset="glowingSun">
+            <span class="preset-name">Glowing Sun</span>
+        </div>
+        <div class="preset preset_hazyDays" data-preset="hazyDays">
+            <span class="preset-name">Hazy Days</span>
+        </div>
+        <div class="preset preset_herMajesty" data-preset="herMajesty">
+            <span class="preset-name">Her Majesty</span>
+        </div>
+        <div class="preset preset_nostalgia" data-preset="nostalgia">
+            <span class="preset-name">Nostalgia</span>
+        </div>
+        <div class="preset preset_hemingway" data-preset="hemingway">
+            <span class="preset-name">Hemingway</span>
+        </div>
+        <div class="preset preset_concentrate" data-preset="concentrate">
+            <span class="preset-name">Concentrate</span>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        Статья: 
+        <a href="https://nikitakiselev.ru/article/web-prilozhenie-s-filtrami-kak-v-instagram" target="_blank">
+            HTML5 web приложение с фильтрами как в Instagram
+        </a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
